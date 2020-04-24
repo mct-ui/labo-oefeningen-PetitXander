@@ -128,6 +128,8 @@ table,
 address,
 figure {
     margin: 0 0 24px;
+    position: relative;
+    float: left;
 }
 
 ul,
@@ -153,11 +155,21 @@ blockquote * {
 }
 
 figcaption {
-    font-weight: 400;
-    font-size: 12px;
+    background-color: white;
+    color: black;
+    max-width: 200px;
+    font-size: 10px;
+    display: block;
+
+    position: absolute;
+    top: 4px;
+    right:8px;
+    padding:10px;
     line-height: 16px;
-    margin-top: 8px;
-}
+    border-right:4px solid #0053FB;
+  }
+
+
 
 hr {
     border: 0;
@@ -486,14 +498,30 @@ a:focus {
 }
 
 /*
-      Component: CTA button
-      ---
-      CTA button
-  */
+    Component: CTA link
+    ---
+    Small cta link with custom animation
+*/
 
-  .c-cta-button{
-      dis
-  }
+.c-link-cta {
+ 
+    display: inline-block;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    padding: 20px 30px;
+    background-image: linear-gradient(to right, #033AA7 0%, #0053FB 100%);
+    color:#DBEDFF !important;
+    font-weight:600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border:1px solid rgb(61, 133, 205);
+    box-shadow:0 0 10px rgba(17,149,255,0.3);
+    box-sizing:border-box;
+}
+  
+
 
 
 /*------------------------------------*\
